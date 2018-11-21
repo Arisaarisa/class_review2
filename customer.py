@@ -12,16 +12,31 @@ class Customer:  # B1 #A2
 
         print(self.age)
 
+    def entry_free(self):
+        if self.age < 20:
+            return print(1000)
+
+        if self.age >= 20 and self.age < 65:
+            return print(1500)
+
+        if self.age >= 65:
+            return print(1200)
+
+        print(self.entry_free())
+
 
 if __name__ == "__main__":
     ken = Customer("Ken ", "Takahashi", 15)
     ken.full_name()
     ken.age
+    ken.entry_free()
 
     tom = Customer("Tom ", "Ford", 57)
     tom.full_name()
     tom.age
+    tom.entry_free()
 
     ieyasu = Customer("Ieyasu ", "Tokugawa", 73)
     ieyasu.full_name()
     ieyasu.age
+    ieyasu.entry_free()
