@@ -24,19 +24,25 @@ class Customer:  # B1 #A2
 
         print(self.entry_free())
 
+    def info_csv(self):
+        print(f"{self.full_name()}{self.age}{self.entry_free()}")
+
 
 if __name__ == "__main__":
     ken = Customer("Ken ", "Takahashi", 15)
-    ken.full_name()
-    ken.age
-    ken.entry_free()
+    # ken.full_name()
+    # ken.age
+    # ken.entry_free()
+    ken.info_csv()
 
     tom = Customer("Tom ", "Ford", 57)
-    tom.full_name()
-    tom.age
-    tom.entry_free()
+    # tom.full_name()
+    # tom.age
+    # tom.entry_free()
+    tom.info_csv()
 
     ieyasu = Customer("Ieyasu ", "Tokugawa", 73)
-    ieyasu.full_name()
-    ieyasu.age
-    ieyasu.entry_free()
+    # ieyasu.full_name()
+    # ieyasu.age
+    # ieyasu.entry_free()
+    ieyasu.info_csv()
