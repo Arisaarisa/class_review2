@@ -25,7 +25,7 @@ class Customer:  # B1 #A2
         print(self.entry_free())
 
     def info_csv(self):
-        print(f"{self.full_name()}{self.age}{self.entry_free()}")
+        f"{self.full_name()}{self.age}{self.entry_free()}"
 
 
 if __name__ == "__main__":
