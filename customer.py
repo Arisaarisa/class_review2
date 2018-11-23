@@ -1,4 +1,4 @@
-class Customer:  # B1 #A2
+class Customer:  # B1 #A2 #B3 #B4
     def __init__(self, first_name, family_name, age):
         self.first_name = first_name
         self.family_name = family_name
@@ -30,19 +30,10 @@ class Customer:  # B1 #A2
 
 if __name__ == "__main__":
     ken = Customer("Ken ", "Takahashi", 15)
-    # ken.full_name()
-    # ken.age
-    # ken.entry_free()
     ken.info_csv()
 
     tom = Customer("Tom ", "Ford", 57)
-    # tom.full_name()
-    # tom.age
-    # tom.entry_free()
     tom.info_csv()
 
     ieyasu = Customer("Ieyasu ", "Tokugawa", 73)
-    # ieyasu.full_name()
-    # ieyasu.age
-    # ieyasu.entry_free()
     ieyasu.info_csv()
